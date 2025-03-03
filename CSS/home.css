@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    background-color: #22463b;
+    padding-top: 80px; /* Same height as nav bar to prevent overlap */
+  }
+
+  nav {
+    position: fixed; /* Keeps nav bar fixed at the top */
+    top: 0; /* Aligns it to the top of the page */
+    left: 0; /* Aligns it to the left */
+    width: 98%; /* Full width navigation */
+    z-index: 1000; /* Ensure nav bar is above other content */
+    display: flex; /* Align logo and links in the same row */
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Vertically center items */
+    padding: 10px; /* Inner spacing */
+    background-color: #22463b; /* Background color */
+    color: white; /* Text color */
+    font-family: "Poppins", sans-serif;
+  }
+
+  .logo {
+    position: relative;
+    left: 50px;
+    font-size: 20px;
+  }
+
+  /* Navigation links styling */
+  .navigation {
+    display: flex; /* Arrange links horizontally */
+    list-style: none; /* Remove bullet points */
+    gap: 80px; /* Space between links */
+    font-size: 18px;
+  }
+
+  .navigation a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text */
+  }
+  /* Text Content */
+  .hero-content {
+    max-width: 600px;
+    color: white;
+    margin-left: -90px;
+  }
+
+  .hero-content h1 {
+    font-size: 4rem;
+    font-weight: 800;
+  }
+  .hero-content p {
+    font-size: 1.5rem; /* Text size wæḍi karanna */
+  }
+
+  .hero-content .highlight {
+    color: #36c27c; /* Green color for "Backend Dev" */
+  }
+
+  /* Social Links */
+  .social-links a {
+    margin-right: 15px;
+  }
+
+  .download-btn {
+    margin-top: 48px;
+    padding: 10px 20px;
+    background: #11a974;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 263px; /* Button width */
+    height: 74px; /* Button height */
+    font-size: 24px; /* Adjust font size for better fit */
+    display: inline-flex; /* Align text vertically */
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Horizontal alignment */
+    box-shadow: 0 8px 20px rgba(44, 169, 129, 0.8); /* Soft green glow */
+  }
+  .download-btn:hover {
+    box-shadow: 0 8px 20px rgba(44, 169, 129, 0); /* Soft green glow */
+  }
+
+  .hero-image {
+    width: 430px; /* Width of the circle */
+    height: 424px; /* Height of the circle */
+    border-radius: 50%; /* Makes it a circle */
+    overflow: hidden; /* Ensures content stays within the circle */
+    box-shadow: 0 0 200px rgb(148, 237, 191); /* Optional glowing effect */
+    background: url("/images/profile.jpeg") center/cover no-repeat; /* Set background image */
+    margin-left: 30px;
+  }
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10%;
+    color: white;
+  }
+  /* Social Media Icons */
+  .social-links a img {
+    width: 70px; /* Icon width */
+    height: 70px; /* Icon height */
+    object-fit: contain; /* Maintain icon aspect ratio */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    border-radius: 50%; /* Makes the icon circular */
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .social-links div {
+    width: 90px; /* Circle size */
+    height: 90px;
+    border: 2px solid rgba(0, 128, 0, 0); /* Circle border */
+    border-radius: 50%; /* Make circle */
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative;
+  }
+
+  .social-links {
+    display: flex; /* Arrange icons in a row */
+    gap: 25px; /* Space between icons */
+  }
+  .social-links div:hover {
+    border: 2px solid rgba(44, 169, 129, 0.8);
+  }
