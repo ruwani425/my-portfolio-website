@@ -103,7 +103,6 @@ body {
     height: 70px; /* Icon height */
     object-fit: contain; /* Maintain icon aspect ratio */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
-    border-radius: 50%; /* Makes the icon circular */
     position: absolute;
     margin: auto;
     top: 0;
