@@ -1,21 +1,21 @@
 body {
     margin: 0;
     background-color: #22463b;
-    padding-top: 80px; /* Same height as nav bar to prevent overlap */
+    padding-top: 80px; 
   }
 
   nav {
-    position: fixed; /* Keeps nav bar fixed at the top */
-    top: 0; /* Aligns it to the top of the page */
-    left: 0; /* Aligns it to the left */
-    width: 98%; /* Full width navigation */
-    z-index: 1000; /* Ensure nav bar is above other content */
-    display: flex; /* Align logo and links in the same row */
-    justify-content: space-between; /* Space between logo and links */
-    align-items: center; /* Vertically center items */
-    padding: 10px; /* Inner spacing */
-    background-color: #22463b; /* Background color */
-    color: white; /* Text color */
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 98%; 
+    z-index: 1000; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #22463b;
+    color: white;
     font-family: "Poppins", sans-serif;
   }
 
@@ -25,19 +25,17 @@ body {
     font-size: 20px;
   }
 
-  /* Navigation links styling */
   .navigation {
-    display: flex; /* Arrange links horizontally */
-    list-style: none; /* Remove bullet points */
-    gap: 80px; /* Space between links */
+    display: flex;
+    list-style: none;
+    gap: 80px;
     font-size: 18px;
   }
 
   .navigation a {
-    text-decoration: none; /* Remove underline */
-    color: white; /* White text */
+    text-decoration: none;
+    color: white;
   }
-  /* Text Content */
   .hero-content {
     max-width: 600px;
     color: white;
@@ -49,14 +47,13 @@ body {
     font-weight: 800;
   }
   .hero-content p {
-    font-size: 1.5rem; /* Text size wæḍi karanna */
+    font-size: 1.5rem;
   }
 
   .hero-content .highlight {
-    color: #36c27c; /* Green color for "Backend Dev" */
+    color: #36c27c;
   }
 
-  /* Social Links */
   .social-links a {
     margin-right: 15px;
   }
@@ -69,25 +66,25 @@ body {
     color: white;
     border-radius: 10px;
     cursor: pointer;
-    width: 263px; /* Button width */
-    height: 74px; /* Button height */
-    font-size: 24px; /* Adjust font size for better fit */
-    display: inline-flex; /* Align text vertically */
-    align-items: center; /* Vertical alignment */
-    justify-content: center; /* Horizontal alignment */
-    box-shadow: 0 8px 20px rgba(44, 169, 129, 0.8); /* Soft green glow */
+    width: 263px;
+    height: 74px;
+    font-size: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(44, 169, 129, 0.8);
   }
   .download-btn:hover {
-    box-shadow: 0 8px 20px rgba(44, 169, 129, 0); /* Soft green glow */
+    box-shadow: 0 8px 20px rgba(44, 169, 129, 0);
   }
 
   .hero-image {
-    width: 430px; /* Width of the circle */
-    height: 424px; /* Height of the circle */
-    border-radius: 50%; /* Makes it a circle */
-    overflow: hidden; /* Ensures content stays within the circle */
-    box-shadow: 0 0 200px rgb(148, 237, 191); /* Optional glowing effect */
-    background: url("/images/profile.jpeg") center/cover no-repeat; /* Set background image */
+    width: 430px;
+    height: 424px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 200px rgb(148, 237, 191);
+    background: url("/images/profile.jpeg") center/cover no-repeat;
     margin-left: 30px;
   }
   .hero {
@@ -97,12 +94,11 @@ body {
     padding: 5rem 10%;
     color: white;
   }
-  /* Social Media Icons */
   .social-links a img {
-    width: 70px; /* Icon width */
-    height: 70px; /* Icon height */
-    object-fit: contain; /* Maintain icon aspect ratio */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    width: 70px; 
+    height: 70px;
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: absolute;
     margin: auto;
     top: 0;
@@ -112,19 +108,19 @@ body {
   }
 
   .social-links div {
-    width: 90px; /* Circle size */
+    width: 90px;
     height: 90px;
-    border: 2px solid rgba(0, 128, 0, 0); /* Circle border */
-    border-radius: 50%; /* Make circle */
-    display: flex; /* Enable Flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    border: 2px solid rgba(0, 128, 0, 0);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
   }
 
   .social-links {
-    display: flex; /* Arrange icons in a row */
-    gap: 25px; /* Space between icons */
+    display: flex;
+    gap: 25px;
   }
   .social-links div:hover {
     border: 2px solid rgba(44, 169, 129, 0.8);
