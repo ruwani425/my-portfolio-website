@@ -1,83 +1,75 @@
-#text-edu {
-    font-size: 50px;
-    color: white;
-  }
-  #text-cation {
-    font-size: 50px;
-    color: #38ffb9;
-  }
-  .timeline-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-  }
+.timeline-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
 
-  .timeline {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    max-width: 800px;
-  }
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
 
-  .timeline::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 135px;
-    bottom: 0;
-    width: 2px;
-    height: 446px;
-    background: white;
-    transform: translateX(-50%);
-  }
-  .timeline-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 17px 0;
-    position: relative;
-  }
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 135px;
+  bottom: 0;
+  width: 2px;
+  height: 446px;
+  background: white;
+  transform: translateX(-50%);
+}
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 17px 0;
+  position: relative;
+}
 
-  .timeline-item .content {
-    width: 45%;
-  }
+.timeline-item .content {
+  width: 45%;
+}
 
-  .timeline-item.left .content {
-    text-align: right;
-  }
+.timeline-item.left .content {
+  text-align: right;
+}
 
-  .timeline-item.right .content {
-    margin-left: 50%;
-    text-align: left;
-  }
+.timeline-item.right .content {
+  margin-left: 50%;
+  text-align: left;
+}
 
-  .timeline-item::after {
-    content: "";
-    position: absolute;
-    width: 35px;
-    height: 50px;
-    background: #38ffb9;
-    border-radius: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .content h3 {
-    color: #38ffb9;
-    font-size: 28px;
-    text-align: end;
-  }
-  .content p {
-    color: white;
-    font-size: 24px;
-    text-align: end;
-  }
-  .education-topic {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-  }
-  #underline-img-education{
-    display: flex;
-    margin: 20px auto 0;
-  }
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 50px;
+  background: #38ffb9;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.content h3 {
+  color: #38ffb9;
+  font-size: 28px;
+  text-align: end;
+}
+.content p {
+  color: white;
+  font-size: 24px;
+  text-align: end;
+}
+.education-topic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+#underline-img-education {
+  display: flex;
+  margin: 20px auto 0;
+}

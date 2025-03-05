@@ -1,127 +1,127 @@
 body {
-    margin: 0;
-    background-color: #22463b;
-    padding-top: 80px; 
-  }
+  margin: 0;
+  background-color: #22463b;
+  padding-top: 80px;
+}
 
-  nav {
-    position: fixed; 
-    top: 0; 
-    left: 0;
-    width: 98%; 
-    z-index: 1000; 
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #22463b;
-    color: white;
-    font-family: "Poppins", sans-serif;
-  }
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 98%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #22463b;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
 
-  .logo {
-    position: relative;
-    left: 50px;
-    font-size: 20px;
-  }
+.logo {
+  position: relative;
+  left: 50px;
+  font-size: 20px;
+}
 
-  .navigation {
-    display: flex;
-    list-style: none;
-    gap: 80px;
-    font-size: 18px;
-  }
+.navigation {
+  display: flex;
+  list-style: none;
+  gap: 80px;
+  font-size: 18px;
+}
 
-  .navigation a {
-    text-decoration: none;
-    color: white;
-  }
-  .hero-content {
-    max-width: 600px;
-    color: white;
-    margin-left: -90px;
-  }
+.navigation a {
+  text-decoration: none;
+  color: white;
+}
+.hero-content {
+  max-width: 600px;
+  color: white;
+  margin-left: -90px;
+}
 
-  .hero-content h1 {
-    font-size: 4rem;
-    font-weight: 800;
-  }
-  .hero-content p {
-    font-size: 1.5rem;
-  }
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+.hero-content p {
+  font-size: 1.5rem;
+}
 
-  .hero-content .highlight {
-    color: #36c27c;
-  }
+.hero-content .highlight {
+  color: #36c27c;
+}
 
-  .social-links a {
-    margin-right: 15px;
-  }
+.social-links a {
+  margin-right: 15px;
+}
 
-  .download-btn {
-    margin-top: 48px;
-    padding: 10px 20px;
-    background: #11a974;
-    border: none;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 263px;
-    height: 74px;
-    font-size: 24px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 8px 20px rgba(44, 169, 129, 0.8);
-  }
-  .download-btn:hover {
-    box-shadow: 0 8px 20px rgba(44, 169, 129, 0);
-  }
+.download-btn {
+  margin-top: 48px;
+  padding: 10px 20px;
+  background: #11a974;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 263px;
+  height: 74px;
+  font-size: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(44, 169, 129, 0.8);
+}
+.download-btn:hover {
+  box-shadow: 0 8px 20px rgba(44, 169, 129, 0);
+}
 
-  .hero-image {
-    width: 430px;
-    height: 424px;
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: 0 0 200px rgb(148, 237, 191);
-    background: url("/images/profile.jpeg") center/cover no-repeat;
-    margin-left: 30px;
-  }
-  .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5rem 10%;
-    color: white;
-  }
-  .social-links a img {
-    width: 70px; 
-    height: 70px;
-    object-fit: contain;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
+.hero-image {
+  width: 430px;
+  height: 424px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 200px rgb(148, 237, 191);
+  background: url("/images/profile.jpeg") center/cover no-repeat;
+  margin-left: 30px;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 10%;
+  color: white;
+}
+.social-links a img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 
-  .social-links div {
-    width: 90px;
-    height: 90px;
-    border: 2px solid rgba(0, 128, 0, 0);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
+.social-links div {
+  width: 90px;
+  height: 90px;
+  border: 2px solid rgba(0, 128, 0, 0);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 
-  .social-links {
-    display: flex;
-    gap: 25px;
-  }
-  .social-links div:hover {
-    border: 2px solid rgba(44, 169, 129, 0.8);
-  }
+.social-links {
+  display: flex;
+  gap: 25px;
+}
+.social-links div:hover {
+  border: 2px solid rgba(44, 169, 129, 0.8);
+}
