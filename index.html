@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="/CSS/about.css" />
     <link rel="stylesheet" href="/CSS/education.css" />
     <link rel="stylesheet" href="/CSS/service.css" />
-    <style>
-     
-    </style>
+    <link rel="stylesheet" href="/CSS/project.css" />
+    <link rel="stylesheet" href="/CSS/skills.css" />
+    <link rel="stylesheet" href="/CSS/contact.css" />
   </head>
   <body>
     <header>
@@ -179,58 +179,85 @@
       </div>
     </section>
 
+    <!-- project section -->
     <section id="projects" class="projects">
-      <span class="text1">My</span><span class="text2">Projects</span>
-      <div>
-        <img src="project-1.png" alt="Project 1" />
+      <div class="topic">
+        <span class="text1">My</span><span class="text2">Projects</span>
       </div>
       <div>
-        <img src="project-2.png" alt="Project 2" />
+        <img
+          id="underline-img-projects"
+          src="/images/underline.png"
+          alt="underline"
+        />
       </div>
-      <div>
-        <img src="project-3.png" alt="Project 3" />
+      <div class="project-container">
+        <div class="box project1"></div>
+        <div class="box project2"></div>
+        <div class="box project3"></div>
       </div>
     </section>
 
+    <!-- skills section -->
     <section id="skills" class="skills">
-      <span class="text1">My</span><span class="text2">Skills</span>
-      <p>Learned languages and tools</p>
-      <img src="/images/skills.png" alt="Skills" />
+      <div class="topic">
+        <span class="text1">My</span><span class="text2">Skills</span>
+      </div>
+      <div>
+        <img
+          id="underline-img-skills"
+          src="/images/underline.png"
+          alt="underline"
+        />
+      </div>
+      <div class="skills-container">
+        <p>Learned languages and tools</p>
+        <img src="/images/skills.png" alt="Skills" />
+      </div>
     </section>
 
+    <!-- contact section -->
     <section id="contact" class="contact">
-      <span class="text1">Contact</span><span class="text2">Me</span>
+      <div class="topic">
+        <span class="text1">Contact</span><span class="text2">Me</span>
+      </div>
       <div>
-        <h2>Let's Connect</h2>
-        <p>
-          I love to code and I'm always looking for new opportunities to learn
-          and grow. I'm currently working on a few projects and I'm always open
-          to new ideas and collaborations. If you have any questions or want to
-          work with me, feel free to contact me.
-        </p>
-        <div>
-          <img src="/images/contactIcon.png" alt="Contact" />
-          <h5>Contact Us on</h5>
-          <p>077 123 4567</p>
+        <img
+          id="underline-img-contact"
+          src="/images/underline.png"
+          alt="underline"
+        />
+      </div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>Let's Connect</h2>
+          <p>
+            I love to code and I'm always looking for new opportunities to learn
+            and grow. I'm currently working on a few projects and I'm always
+            open to new ideas and collaborations. If you have any questions or
+            want to work with me, feel free to contact me.
+          </p>
+          <div class="contact-details">
+            <div class="details">
+              <img src="/images/call.png" alt="Phone" />
+              <div>Call Us On</div>
+              <div>0767777777</div>
+            </div>
+            <div class="details">
+              <img src="images/email.png" alt="Email" />
+              <div>E mail</div>
+              <div>ruwanielv@gmail.com</div>
+            </div>
+          </div>
         </div>
-
-        <div>
-          <img src="/images/emailIcon.png" alt="email" />
-          <h5>Email</h5>
-          <p>ruwanielv@gmail.com</p>
+        <div class="contact-form">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="text" placeholder="Subject" />
+          <textarea rows="4" placeholder="Message"></textarea>
+          <button>Send</button>
         </div>
       </div>
-      <form>
-        <input type="text" placeholder="Name" />
-        <br />
-        <input type="email" placeholder="Email" />
-        <br />
-        <input type="text" placeholder="Subject" />
-        <br />
-        <textarea placeholder="Message"></textarea>
-        <br />
-        <button type="submit">Send</button>
-      </form>
     </section>
     <footer>
       <p>&copy; 2023 Ruwani Ranthika. All rights reserved.</p>

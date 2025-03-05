@@ -1,0 +1,26 @@
+#underline-img-projects {
+    display: flex;
+    margin: 20px auto 0;
+  }
+  .project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 100px;
+  }
+  .project1 {
+    background-image: url(/images/Project1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .project2 {
+    background-image: url(/images/Project2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .project3 {
+    background-image: url(/images/stockImage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
