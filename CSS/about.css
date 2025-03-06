@@ -1,35 +1,16 @@
 .about {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
-.about-image {
-  margin-top: 100px;
-  margin-left: 120px;
+.about-image img {
+  max-width: 350px;
+  height: auto;
 }
 
 .about-content {
-  flex: 1;
-  text-align: left;
-  margin-left: 30px;
   max-width: 600px;
-  position: relative;
-  left: -200px;
-}
-
-.about-content span {
-  text-align: left;
-  font-weight: 500;
-  font-size: 36px;
-}
-.about-content h4 {
-  font-size: 24px;
-  color: white;
-}
-.about-content p {
-  font-size: 24px;
-  color: #f1f1f1;
 }
 
 .about-btn {
@@ -43,6 +24,18 @@
   margin-top: 15px;
   box-shadow: 0 8px 20px rgba(100, 208, 174, 0.8);
 }
+
 .about-btn:hover {
   box-shadow: 0 8px 20px rgba(44, 169, 129, 0);
+}
+
+.about-content h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.about-content p {
+  font-size: 23px;
+  color: #f1f1f1;
 }

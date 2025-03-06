@@ -6,3 +6,12 @@
   font-size: 50px;
   color: #38ffb9;
 }
+#underline-img {
+  display: flex;
+  margin: 20px auto 0;
+}
+footer {
+  background-color: #021f14;
+  text-align: center;
+  padding: 20px;
+}

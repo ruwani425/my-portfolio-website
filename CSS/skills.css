@@ -1,14 +1,10 @@
-#underline-img-skills {
-    display: flex;
-    margin: 20px auto 0;
-  }
-  .skills-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .skills-container p {
-    color: white;
-    font-size: 24px;
-  }
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.skills-container p {
+  color: white;
+  font-size: 24px;
+}

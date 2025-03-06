@@ -5,10 +5,7 @@ body {
   padding: 0;
   color: white;
 }
-#underline-img-contact {
-  display: flex;
-  margin: 20px auto 0;
-}
+
 .contact-container {
   display: flex;
   justify-content: space-around;
@@ -82,9 +79,4 @@ body {
 .contact-details {
   display: flex;
   flex-direction: row;
-}
-footer {
-  background-color: #021f14;
-  text-align: center;
-  padding: 20px;
 }
