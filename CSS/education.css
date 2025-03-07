@@ -69,3 +69,51 @@
   justify-content: center;
   margin-top: 100px;
 }
+
+@media (max-width: 425px) {
+  .timeline::before {
+    /* height: 298px;
+    top: 62px; */
+    height: 313px;
+    top: 78px;
+  }
+
+  .timeline-item {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+
+  .timeline-item::after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .timeline-item .content {
+    width: 45%;
+  }
+
+  .timeline-item.right .content {
+    margin-left: 204px;
+    text-align: left;
+  }
+
+  .timeline-item.left .content {
+    text-align: right;
+  }
+
+  .content h3 {
+    font-size: 18px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .text1 {
+    font-size: 2rem;
+  }
+  .text2 {
+    font-size: 2rem;
+  }
+}

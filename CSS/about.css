@@ -89,4 +89,56 @@
     font-size: 15px;
     margin: 0 auto;
   }
+  .about-topic .text1 {
+    font-size: 2rem;
+  }
+  
+  .about-topic .text2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 425px) {
+  .about {
+    padding: 50px 20px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    margin: 30px 10px;
+    gap: 30px;
+  }
+
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .right-side-content h4 {
+    font-size: 20px;
+  }
+
+  .right-side-content p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .about-btn {
+    height: 45px;
+    width: 130px;
+    font-size: 14px;
+    margin: 0 auto;
+  }
+
+  .about-topic .text1 {
+    font-size: 1.8rem;
+  }
+
+  .about-topic .text2 {
+    font-size: 1.8rem;
+  }
+
+  #underline-img-about {
+    width: 80px;
+    margin: 5px 0;
+  }
 }
