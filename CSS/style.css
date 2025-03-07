@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  background-color: #22463b;
+  padding-top: 80px;
+}
+
 .text1 {
   font-size: 50px;
   color: white;

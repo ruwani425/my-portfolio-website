@@ -21,8 +21,8 @@
 }
 .box-container {
   display: flex;
-  justify-content: space-around;
   padding-top: 100px;
+  gap: 30px;
 }
 
 .box:hover {
