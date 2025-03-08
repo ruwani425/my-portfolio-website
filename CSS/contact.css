@@ -123,10 +123,7 @@
   }
 
   .contact-details {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: none;
   }
 
   .details {
@@ -162,5 +159,10 @@
     width: 100%;
     font-size: 16px;
     padding: 10px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .contact-details-mobile {
+    display: none;
   }
 }
