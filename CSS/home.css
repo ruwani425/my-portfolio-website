@@ -219,3 +219,28 @@ nav {
     flex-direction: column-reverse;
   }
 } 
+@media (max-width : 320px) {
+  .hero-image {
+    width: 243px;
+    height: 250px;
+  }
+  .hero-content h1 {
+    font-size: 1.3rem;
+  }
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+  .social-links a img {
+    height: 38px;
+    width: 38px;
+  }
+  .social-links {
+    gap: 0;
+  }
+  .download-btn {
+    padding: 0;
+    height: 50px;
+    width: 140px;
+    font-size: small;
+  }
+}
