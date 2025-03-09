@@ -17,11 +17,17 @@
   background-image: url(/images/Project2.png);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 1s;
 }
 .project3 {
   background-image: url(/images/stockImage.png);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 1s;
 }
 .blue-box {
   background-color: #38ffb979;
@@ -32,7 +38,16 @@
   bottom: -500px;
   transition-duration: 1s;
 }
-.project1:hover .blue-box{
+.blue-box p {
+  color: black;
+}
+.project1:hover .blue-box {
+  bottom: -70px;
+}
+.project2:hover .blue-box {
+  bottom: -70px;
+}
+.project3:hover .blue-box {
   bottom: -70px;
 }
 @media (max-width: 425px) {
@@ -47,7 +62,7 @@
   .project2,
   .project3 {
     width: 100%;
-    max-width: 300px;
-    height: 220px;
+    max-width: 245px;
+    height: 204px;
   }
 }
