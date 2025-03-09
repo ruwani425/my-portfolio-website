@@ -66,3 +66,12 @@
     height: 204px;
   }
 }
+@media (max-width : 320px) {
+  .project1,
+  .project2,
+  .project3 {
+    width: 100%;
+    max-width: 223px;
+    height: 200px;
+  }
+}

@@ -174,4 +174,15 @@
   .contact-details-mobile {
     display: none;
   }
+  .contact-info h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  .contact-info p {
+    font-size: 1rem;
+  }
+  .details img {
+    width: 40px;
+    height: 40px;
+  }
 }
