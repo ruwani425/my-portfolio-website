@@ -1,4 +1,3 @@
-
 .service {
   margin: 100px;
 }
@@ -95,10 +94,10 @@
   .btn-read-more {
     width: 111px;
     height: 35px;
-    font-size: 12px; 
+    font-size: 12px;
   }
 }
-@media (min-width : 1024px) {
+@media (min-width: 1024px) {
   .box {
     height: 319px;
     width: 379px;
@@ -106,5 +105,13 @@
   .box-container {
     gap: 18px;
     padding-top: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .box {
+    width: 265px;
+  }
+  .box-container {
+    flex-wrap: wrap;
   }
 }

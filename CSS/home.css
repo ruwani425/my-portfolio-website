@@ -81,7 +81,7 @@ nav {
 }
 
 .hero-image {
-  width: 430px;
+  width: 420px;
   height: 424px;
   border-radius: 50%;
   overflow: hidden;
@@ -215,9 +215,10 @@ nav {
 
   .download-btn {
     padding: 10px 20px;
-    font-size: 16px;
-    width: 200px;
-  }
+    font-size: 13px;
+    width: 120px;
+    height: 50px;
+}
 
   .hero-image {
     width: 250px;
@@ -261,5 +262,15 @@ nav {
     height: 50px;
     width: 140px;
     font-size: small;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero {
+    padding: 4rem 5%;
+  }
+  .hero-image {
+    width: 518px;
+    height: 509px;
   }
 }

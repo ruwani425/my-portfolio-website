@@ -75,3 +75,14 @@
     height: 200px;
   }
 }
+@media (max-width : 768px) {
+  .project-container {
+    flex-wrap: wrap;
+    margin: 89px;
+  }
+}
+@media (max-width : 375px) {
+  .project-container {
+    margin: 0;
+  }
+}
