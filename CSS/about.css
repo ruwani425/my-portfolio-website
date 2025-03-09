@@ -106,19 +106,22 @@
     flex-direction: column;
     margin: 30px 10px;
     gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .about-image img {
-    max-width: 100%;
-    height: auto;
+    max-width: 234px;
+    height: 313px;
   }
 
   .right-side-content h4 {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .right-side-content p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.6;
   }
 
