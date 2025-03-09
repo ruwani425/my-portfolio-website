@@ -27,3 +27,9 @@
     font-size: 14px;
   }
 }
+@media (max-width : 375px) {
+  .skills-img {
+    width: 344px;
+    height: 190px;
+  }
+}
