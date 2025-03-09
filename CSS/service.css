@@ -1,3 +1,4 @@
+
 .service {
   margin: 100px;
 }
@@ -57,7 +58,7 @@
 
   .box {
     width: 100%;
-    max-width: 258px;
+    width: 258px;
     height: 228px;
     padding: 30px 20px;
     border-radius: 20px;
@@ -71,5 +72,29 @@
 
   .box p {
     font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  .box {
+    width: 100%;
+    width: 223px;
+    height: 200px;
+    padding: 18px 2px;
+    border-radius: 20px;
+  }
+
+  .web-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .box h3 {
+    font-size: 1rem;
+  }
+
+  .btn-read-more {
+    width: 111px;
+    height: 35px;
+    font-size: 12px; 
   }
 }
