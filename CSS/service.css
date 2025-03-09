@@ -98,3 +98,13 @@
     font-size: 12px; 
   }
 }
+@media (max-width : 1024px) {
+  .box {
+    height: 319px;
+    width: 379px;
+  }
+  .box-container {
+    gap: 18px;
+    padding-top: 50px;
+  }
+}

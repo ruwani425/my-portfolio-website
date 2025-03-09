@@ -84,7 +84,7 @@ nav {
   width: 430px;
   height: 424px;
   border-radius: 50%;
-  /* overflow: hidden; */
+  overflow: hidden;
   box-shadow: 0 0 200px rgb(148, 237, 191);
   background: url("/images/profile.jpeg") center/cover no-repeat;
   margin-left: 30px;
@@ -196,8 +196,7 @@ nav {
     font-size: small;
   }
 }
-
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
   .navigation {
     font-size: 0.9rem;
   }
@@ -227,5 +226,34 @@ nav {
     width: 160px;
     height: 54px;
     font-size:17px
+  }
+}
+
+ @media (max-width : 1024px) {
+  .navigation {
+    font-size: 16px;
+  }
+  .logo {
+    font-size:17px;
+  }
+  .hero {
+    padding: 1rem 5%;
+  }
+  .hero-content {
+    width: 577px;
+  }
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  .hero-content p {
+    font-size: 1.3rem;
+  }
+  .social-links {
+    gap: 19px;
+  }
+  .download-btn {
+    width: 215px;
+    height: 66px;
+    font-size: 20px;
   }
 }
