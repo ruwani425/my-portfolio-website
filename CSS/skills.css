@@ -33,3 +33,9 @@
     height: 190px;
   }
 }
+@media (max-width : 768px) {
+  .skills-img {
+    width: 676px;
+    height: 288px;
+  }
+}

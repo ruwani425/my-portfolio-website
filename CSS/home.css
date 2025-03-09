@@ -84,7 +84,7 @@ nav {
   width: 430px;
   height: 424px;
   border-radius: 50%;
-  overflow: hidden;
+  /* overflow: hidden; */
   box-shadow: 0 0 200px rgb(148, 237, 191);
   background: url("/images/profile.jpeg") center/cover no-repeat;
   margin-left: 30px;
@@ -118,54 +118,6 @@ nav {
 
 .burger-button {
   display: none;
-}
-
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    padding: 3rem 5%;
-  }
-
-  .hero-content {
-    margin: 0;
-    max-width: 100%;
-  }
-
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero-content p {
-    font-size: 1.2rem;
-  }
-
-  .hero-image {
-    width: 300px;
-    height: 300px;
-    margin: 20px auto;
-  }
-
-  .download-btn {
-    width: 220px;
-    height: 60px;
-    font-size: 18px;
-  }
-
-  .social-links {
-    justify-content: center;
-  }
-
-  .social-links a img {
-    width: 50px;
-    height: 50px;
-  }
-
-  .social-links div {
-    width: 70px;
-    height: 70px;
-  }
 }
 
 @media (max-width: 425px) {
@@ -242,5 +194,38 @@ nav {
     height: 50px;
     width: 140px;
     font-size: small;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    font-size: 0.9rem;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero {
+    padding: 10px 4%;
+  }
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+  .social-links a img {
+    width: 56px;
+  }
+  .social-links {
+    gap: 0;
+  }
+  .hero-image {
+    width: 548px;
+    height: 308px;
+  }
+  .download-btn {
+    width: 160px;
+    height: 54px;
+    font-size:17px
   }
 }
