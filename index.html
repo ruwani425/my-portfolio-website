@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
     <title>Ruwani Ranthika-portfolio</title>
     <link rel="stylesheet" href="/CSS/style.css" />
     <link rel="stylesheet" href="/CSS/home.css" />
@@ -12,6 +15,7 @@
     <link rel="stylesheet" href="/CSS/project.css" />
     <link rel="stylesheet" href="/CSS/skills.css" />
     <link rel="stylesheet" href="/CSS/contact.css" />
+
     <style></style>
   </head>
   <body>
@@ -76,6 +80,21 @@
     </section>
 
     <!-- about section -->
+    <div class="flex-center">
+      <div>
+        <div class="about-topic-mobile">
+          <span class="text1">About</span><span class="text2"> Me</span>
+        </div>
+        <div>
+          <img
+            id="underline-img-about-mobile"
+            src="/images/underline.png"
+            alt="underline"
+          />
+        </div>
+      </div>
+    </div>
+
     <section id="about" class="about">
       <div class="about-content">
         <div class="about-image">
@@ -196,7 +215,15 @@
         <img id="underline-img" src="/images/underline.png" alt="underline" />
       </div>
       <div class="project-container">
-        <div class="box project1"></div>
+        <div class="box project1">
+          <div class="blue-box">
+            <h2>Blood Bank Management System</h2>
+            <p>
+              A Standalone Java Application Built with MVC Architecture and
+              MySQL,JavaFx
+            </p>
+          </div>
+        </div>
         <div class="box project2"></div>
         <div class="box project3"></div>
       </div>
@@ -236,7 +263,7 @@
             open to new ideas and collaborations. If you have any questions or
             want to work with me, feel free to contact me.
           </p>
-          
+
           <div class="contact-details">
             <div class="details">
               <img src="/images/call.png" alt="Phone" />
@@ -253,9 +280,8 @@
               </div>
             </div>
           </div>
-
         </div>
-        
+
         <div class="contact-form">
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
@@ -280,7 +306,6 @@
             </div>
           </div>
         </div>
-        
       </div>
     </section>
     <footer>

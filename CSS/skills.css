@@ -13,4 +13,7 @@
   .skills-img {
     width: 400px;
   }
+  .skills-container p {
+    font-size: 18px;
+  }
 }

@@ -29,6 +29,7 @@
 
 .details {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 15px;
   margin-bottom: 15px;
@@ -127,7 +128,7 @@
   }
 
   .details {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     gap: 10px;
   }
@@ -161,7 +162,7 @@
     padding: 10px;
   }
 }
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 426px) {
   .contact-details-mobile {
     display: none;
   }
