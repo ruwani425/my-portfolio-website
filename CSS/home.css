@@ -120,7 +120,74 @@ nav {
   display: none;
 }
 
-@media (max-width: 425px) {
+@media (min-width: 768px ) {
+  .navigation {
+    font-size: 0.9rem;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero {
+    padding: 10px 4%;
+  }
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+  .social-links a img {
+    width: 56px;
+  }
+  .social-links {
+    gap: 0;
+  }
+  .hero-image {
+    width: 548px;
+    height: 288px;
+  }
+  .download-btn {
+    width: 160px;
+    height: 54px;
+    font-size:17px
+  }
+}
+
+ @media (min-width : 1024px) {
+  .navigation {
+    font-size: 16px;
+  }
+  .logo {
+    font-size:17px;
+  }
+  .hero {
+    padding: 1rem 5%;
+  }
+  .hero-content {
+    width: 577px;
+  }
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  .hero-content p {
+    font-size: 1.3rem;
+  }
+  .social-links {
+    gap: 19px;
+  }
+
+  .hero-image {
+    width: 548px;
+    height: 431px;
+  }
+  .download-btn {
+    width: 215px;
+    height: 66px;
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 425px){
   .navigation {
     display: none;
   }
@@ -194,66 +261,5 @@ nav {
     height: 50px;
     width: 140px;
     font-size: small;
-  }
-}
- @media (max-width: 768px) {
-  .navigation {
-    font-size: 0.9rem;
-  }
-  .logo {
-    font-size: 1rem;
-  }
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-  .hero {
-    padding: 10px 4%;
-  }
-  .hero-content p {
-    font-size: 0.9rem;
-  }
-  .social-links a img {
-    width: 56px;
-  }
-  .social-links {
-    gap: 0;
-  }
-  .hero-image {
-    width: 548px;
-    height: 308px;
-  }
-  .download-btn {
-    width: 160px;
-    height: 54px;
-    font-size:17px
-  }
-}
-
- @media (max-width : 1024px) {
-  .navigation {
-    font-size: 16px;
-  }
-  .logo {
-    font-size:17px;
-  }
-  .hero {
-    padding: 1rem 5%;
-  }
-  .hero-content {
-    width: 577px;
-  }
-  .hero-content h1 {
-    font-size: 3rem;
-  }
-  .hero-content p {
-    font-size: 1.3rem;
-  }
-  .social-links {
-    gap: 19px;
-  }
-  .download-btn {
-    width: 215px;
-    height: 66px;
-    font-size: 20px;
   }
 }

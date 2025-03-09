@@ -98,7 +98,7 @@
     font-size: 12px; 
   }
 }
-@media (max-width : 1024px) {
+@media (min-width : 1024px) {
   .box {
     height: 319px;
     width: 379px;
