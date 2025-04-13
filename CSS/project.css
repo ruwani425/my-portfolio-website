@@ -4,30 +4,37 @@
   align-items: center;
   gap: 50px;
   margin: 100px;
+  flex-wrap: wrap;
 }
 .project1 {
   background-image: url(/images/Project1.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: relative;
   overflow: hidden;
   transition-duration: 1s;
+  box-sizing: border-box;
 }
 .project2 {
   background-image: url(/images/Project2.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: relative;
   overflow: hidden;
   transition-duration: 1s;
+  box-sizing: border-box;
 }
 .project3 {
   background-image: url(/images/stockImage.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: relative;
   overflow: hidden;
   transition-duration: 1s;
+  box-sizing: border-box;
 }
 .blue-box {
   background-color: #38ffb979;
@@ -37,9 +44,16 @@
   position: absolute;
   bottom: -500px;
   transition-duration: 1s;
+  padding: 15px;
+  box-sizing: border-box;
 }
 .blue-box p {
   color: black;
+  font-size: 14px;
+}
+.blue-box h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 .project1:hover .blue-box {
   bottom: -70px;
@@ -61,28 +75,64 @@
   .project1,
   .project2,
   .project3 {
-    width: 100%;
-    max-width: 245px;
+    width: 245px;
     height: 204px;
   }
+
+  .blue-box h2 {
+    font-size: 16px;
+  }
+
+  .blue-box p {
+    font-size: 12px;
+  }
 }
-@media (max-width : 320px) {
+@media (max-width: 320px) {
   .project1,
   .project2,
   .project3 {
-    width: 100%;
-    max-width: 223px;
+    width: 223px;
     height: 200px;
   }
-}
-@media (max-width : 768px) {
-  .project-container {
-    flex-wrap: wrap;
-    margin: 89px;
+
+  .blue-box h2 {
+    font-size: 14px;
+  }
+
+  .blue-box p {
+    font-size: 11px;
+  }
+
+  .project1:hover .blue-box,
+  .project2:hover .blue-box,
+  .project3:hover .blue-box {
+    bottom: -100px;
   }
 }
-@media (max-width : 375px) {
+@media (max-width: 768px) {
   .project-container {
-    margin: 0;
+    flex-wrap: wrap;
+    margin: 50px;
+    justify-content: center;
+  }
+
+  .project1,
+  .project2,
+  .project3 {
+    width: 265px;
+    height: 220px;
+  }
+}
+@media (max-width: 375px) {
+  .project-container {
+    margin: 30px 0;
+  }
+}
+@media (min-width: 1024px) {
+  .project1,
+  .project2,
+  .project3 {
+    width: 320px;
+    height: 280px;
   }
 }

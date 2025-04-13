@@ -6,6 +6,7 @@
   margin: auto;
   border-radius: 10px;
   color: white;
+  box-sizing: border-box;
 }
 
 .contact-info {
@@ -71,6 +72,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .contact-form input,
@@ -83,6 +85,7 @@
   background: #f8f8f8;
   color: #333;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 .contact-form textarea {
@@ -114,13 +117,13 @@
     padding: 20px;
     text-align: center;
     box-sizing: border-box;
-    overflow: hidden;
   }
 
   .contact-info {
     width: 100%;
     max-width: 100%;
     padding: 0 10px;
+    box-sizing: border-box;
   }
 
   .contact-details {
@@ -141,6 +144,7 @@
     justify-content: center;
     margin-top: 20px;
     padding: 0 10px;
+    box-sizing: border-box;
   }
 
   .contact-form {
@@ -155,6 +159,7 @@
     width: 100%;
     padding: 10px;
     font-size: 14px;
+    box-sizing: border-box;
   }
 
   .contact-form button {
@@ -187,7 +192,7 @@
   }
 }
 
-@media (max-width : 768px) {
+@media (max-width: 768px) {
   .contact-form {
     max-width: 379px;
   }

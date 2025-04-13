@@ -1,5 +1,6 @@
 .service {
   margin: 100px;
+  box-sizing: border-box;
 }
 .topic {
   display: flex;
@@ -15,14 +16,18 @@
   border: 2px solid #2ddb9e00;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 .box-container {
   display: flex;
   padding-top: 100px;
   gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .box:hover {
@@ -36,13 +41,20 @@
   background: #11a974;
   border: none;
   box-shadow: 0 8px 20px rgba(100, 208, 174, 0.8);
+  margin-bottom: 15px;
 }
 .btn-read-more:hover {
   box-shadow: 0 8px 20px rgba(44, 169, 129, 0);
 }
 .box p {
   color: #f1f1f1;
+  margin: 15px 0;
 }
+
+.box h3 {
+  margin-top: 15px;
+}
+
 @media (max-width: 425px) {
   .service {
     margin: 50px 20px;
@@ -56,10 +68,9 @@
   }
 
   .box {
-    width: 100%;
     width: 258px;
     height: 228px;
-    padding: 30px 20px;
+    padding: 20px;
     border-radius: 20px;
   }
 
@@ -75,10 +86,9 @@
 }
 @media (max-width: 320px) {
   .box {
-    width: 100%;
     width: 223px;
     height: 200px;
-    padding: 18px 2px;
+    padding: 15px;
     border-radius: 20px;
   }
 
@@ -89,18 +99,20 @@
 
   .box h3 {
     font-size: 1rem;
+    margin-top: 10px;
   }
 
   .btn-read-more {
     width: 111px;
     height: 35px;
     font-size: 12px;
+    margin-bottom: 10px;
   }
 }
 @media (min-width: 1024px) {
   .box {
     height: 319px;
-    width: 379px;
+    width: 320px;
   }
   .box-container {
     gap: 18px;
@@ -110,8 +122,10 @@
 @media (max-width: 768px) {
   .box {
     width: 265px;
+    height: 280px;
   }
   .box-container {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }

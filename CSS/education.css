@@ -115,7 +115,7 @@
     font-size: 1.5rem;
   }
 }
-@media (max-width : 320px) {
+@media (max-width: 320px) {
   .timeline-item::after {
     width: 15px;
     height: 15px;
@@ -136,5 +136,15 @@
   .timeline-item.right .content {
     margin-left: 161px;
     text-align: left;
+  }
+}
+@media (max-width: 768px) {
+  .text1 {
+    font-size: 2rem;
+    color: white;
+  }
+  .text2 {
+    font-size: 2rem;
+    color: #38ffb9;
   }
 }
