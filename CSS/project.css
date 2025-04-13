@@ -7,7 +7,7 @@
   flex-wrap: wrap;
 }
 .project1 {
-  background-image: url(/images/Project1.png);
+  background-image: url(/images/project.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -17,7 +17,7 @@
   box-sizing: border-box;
 }
 .project2 {
-  background-image: url(/images/Project2.png);
+  background-image: url(/images/project.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -27,7 +27,7 @@
   box-sizing: border-box;
 }
 .project3 {
-  background-image: url(/images/stockImage.png);
+  background-image: url(/images/project.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -37,33 +37,66 @@
   box-sizing: border-box;
 }
 .blue-box {
-  background-color: #38ffb979;
+  background-color: rgba(56, 255, 185, 0.7);
   width: 100%;
   height: 100%;
   border-radius: 10%;
   position: absolute;
   bottom: -500px;
   transition-duration: 1s;
-  padding: 15px;
+  padding: 20px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .blue-box p {
-  color: black;
-  font-size: 14px;
+  color: #022c1f;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.4;
 }
 .blue-box h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #022c1f;
+  font-weight: 700;
 }
-.project1:hover .blue-box {
-  bottom: -70px;
+
+.github-btn {
+  background-color: #022c1f;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
-.project2:hover .blue-box {
-  bottom: -70px;
+
+.github-btn:hover {
+  background-color: #11a974;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
+
+.github-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.project1:hover .blue-box,
+.project2:hover .blue-box,
 .project3:hover .blue-box {
-  bottom: -70px;
+  bottom: 0;
 }
+
 @media (max-width: 425px) {
   .project-container {
     flex-direction: column;
@@ -80,11 +113,22 @@
   }
 
   .blue-box h2 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .blue-box p {
-    font-size: 12px;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .github-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .github-btn img {
+    width: 20px;
+    height: 20px;
   }
 }
 @media (max-width: 320px) {
@@ -96,17 +140,22 @@
   }
 
   .blue-box h2 {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .blue-box p {
-    font-size: 11px;
+    font-size: 12px;
+    margin-bottom: 10px;
   }
 
-  .project1:hover .blue-box,
-  .project2:hover .blue-box,
-  .project3:hover .blue-box {
-    bottom: -100px;
+  .github-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .github-btn img {
+    width: 16px;
+    height: 16px;
   }
 }
 @media (max-width: 768px) {
