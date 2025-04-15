@@ -1,51 +1,59 @@
 .service {
-  margin: 100px;
+  margin: 100px 20px;
   box-sizing: border-box;
 }
+
 .topic {
   display: flex;
   justify-content: center;
 }
 
 .box {
-  height: 319px;
-  width: 379px;
   background-color: #2f5348;
   color: white;
   border-radius: 10%;
-  border: 2px solid #2ddb9e00;
+  border: 2px solid transparent;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 70px;
 }
+
 .box-container {
-  display: flex;
-  padding-top: 100px;
+  display: grid;
   gap: 30px;
-  justify-content: center;
-  flex-wrap: wrap;
+  padding-top: 50px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .box:hover {
   border: 2px solid #2ddb9e;
 }
+
 .btn-read-more {
-  width: 151px;
-  height: 44px;
   border-radius: 10px;
   color: white;
   background: #11a974;
   border: none;
   box-shadow: 0 8px 20px rgba(100, 208, 174, 0.8);
-  margin-bottom: 15px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
+
 .btn-read-more:hover {
   box-shadow: 0 8px 20px rgba(44, 169, 129, 0);
 }
+
 .box p {
   color: #f1f1f1;
   margin: 15px 0;
@@ -55,41 +63,62 @@
   margin-top: 15px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 320px) {
   .service {
-    margin: 50px 20px;
+    margin: 50px 10px;
   }
 
   .box-container {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 50px;
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 
   .box {
-    width: 258px;
-    height: 228px;
-    padding: 20px;
+    width: 220px;
+    height: 220px;
+    padding: 15px;
+    padding-bottom: 60px;
     border-radius: 20px;
   }
 
-  .btn-read-more {
-    width: 130px;
-    height: 40px;
-    font-size: 14px;
+  .web-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .box h3 {
+    font-size: 0.9rem;
+    margin-top: 8px;
   }
 
   .box p {
-    font-size: 14px;
+    font-size: 0.8rem;
+    margin: 8px 0;
+  }
+
+  .btn-read-more {
+    width: 100px;
+    height: 35px;
+    font-size: 11px;
+    bottom: 15px;
   }
 }
-@media (max-width: 320px) {
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .service {
+    margin: 50px 15px;
+  }
+
+  .box-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
   .box {
-    width: 223px;
-    height: 200px;
-    padding: 15px;
-    border-radius: 20px;
+    width: 240px;
+    height: 240px;
+    padding: 18px;
+    padding-bottom: 65px;
   }
 
   .web-icon {
@@ -99,33 +128,160 @@
 
   .box h3 {
     font-size: 1rem;
-    margin-top: 10px;
+  }
+
+  .box p {
+    font-size: 0.85rem;
   }
 
   .btn-read-more {
-    width: 111px;
-    height: 35px;
+    width: 120px;
+    height: 40px;
     font-size: 12px;
-    margin-bottom: 10px;
   }
 }
-@media (min-width: 1024px) {
-  .box {
-    height: 319px;
-    width: 320px;
+
+@media (min-width: 376px) and (max-width: 425px) {
+  .service {
+    margin: 50px 20px;
   }
+
   .box-container {
-    gap: 18px;
-    padding-top: 50px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .box {
+    width: 260px;
+    height: 260px;
+    padding: 20px;
+    padding-bottom: 70px;
+  }
+
+  .web-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .box h3 {
+    font-size: 1.1rem;
+  }
+
+  .box p {
+    font-size: 0.9rem;
+  }
+
+  .btn-read-more {
+    width: 130px;
+    height: 44px;
+    font-size: 13px;
   }
 }
-@media (max-width: 768px) {
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .service {
+    margin: 70px 30px;
+  }
+
+  .box-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
   .box {
-    width: 265px;
+    width: 280px;
     height: 280px;
+    padding-bottom: 70px;
   }
+
+  .web-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .box h3 {
+    font-size: 1.2rem;
+  }
+
+  .box p {
+    font-size: 1rem;
+  }
+
+  .btn-read-more {
+    width: 140px;
+    height: 44px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .service {
+    margin: 80px 40px;
+  }
+
   .box-container {
-    flex-wrap: wrap;
-    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .box {
+    width: 300px;
+    height: 300px;
+    padding-bottom: 70px;
+  }
+
+  .web-icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .box h3 {
+    font-size: 1.3rem;
+  }
+
+  .box p {
+    font-size: 1rem;
+  }
+
+  .btn-read-more {
+    width: 140px;
+    height: 44px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .service {
+    margin: 100px 50px;
+  }
+
+  .box-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .box {
+    width: 320px;
+    height: 320px;
+    padding-bottom: 70px;
+  }
+
+  .web-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .box h3 {
+    font-size: 1.4rem;
+  }
+
+  .box p {
+    font-size: 1.1rem;
+  }
+
+  .btn-read-more {
+    width: 150px;
+    height: 44px;
+    font-size: 16px;
   }
 }
