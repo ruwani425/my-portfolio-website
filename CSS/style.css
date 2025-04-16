@@ -8,6 +8,11 @@ body {
   box-sizing: border-box;
 }
 
+html {
+  scroll-padding-top: 0px;
+  scroll-behavior: smooth;
+}
+
 .text1 {
   font-size: 50px;
   color: white;
@@ -26,9 +31,88 @@ footer {
   padding: 20px;
   color: white;
 }
+
+#hero {
+  scroll-margin-top: 80px;
+}
+
+#about {
+  scroll-margin-top: 80px;
+}
+
+#education {
+  scroll-margin-top: 100px;
+}
+
+#service {
+  scroll-margin-top: 100px;
+}
+
+#projects {
+  scroll-margin-top: 100px;
+}
+
+#assignments {
+  scroll-margin-top: 100px;
+}
+
+#skills {
+  scroll-margin-top: 100px;
+}
+
+#gallery {
+  scroll-margin-top: 100px;
+}
+
+#contact {
+  scroll-margin-top: 100px;
+}
+
+section {
+  padding-top: 30px;
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 0px;
+  }
+
+  #education,
+  #service,
+  #projects,
+  #assignments,
+  #skills,
+  #gallery,
+  #contact {
+    scroll-margin-top: 80px;
+  }
+
+  section {
+    padding-top: 20px;
+  }
+}
+
 @media (max-width: 425px) {
   #underline-img {
     width: 90px;
     margin: 14px auto 0;
+  }
+
+  html {
+    scroll-padding-top: 70px;
+  }
+
+  #education,
+  #service,
+  #projects,
+  #assignments,
+  #skills,
+  #gallery,
+  #contact {
+    scroll-margin-top: 70px;
+  }
+
+  section {
+    padding-top: 15px;
   }
 }

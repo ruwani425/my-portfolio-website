@@ -1,19 +1,21 @@
 .assignments {
-  margin: 100px 0;
+  margin: 80px 0;
+  padding-top: 40px;
 }
 
 .assignment-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+  gap: 30px;
   justify-content: center;
-  align-items: center;
-  gap: 50px;
-  margin: 100px;
-  flex-wrap: wrap;
+  margin: 50px auto;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 
 .assignment-box {
   height: 280px;
-  width: 320px;
+  width: 100%;
   background-color: #2f5348;
   border-radius: 10%;
   position: relative;
@@ -38,25 +40,32 @@
 }
 
 .assignment-overlay {
-  background-color: #38ffb979;
+  background-color: rgba(56, 255, 185, 0.48);
   width: 100%;
   height: 100%;
   border-radius: inherit;
   position: absolute;
   bottom: -100%;
   transition: bottom 0.5s ease;
-  padding: 15px;
+  padding: 20px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .assignment-overlay p {
-  color: black;
-  font-size: 14px;
+  color: #022c1f;
+  font-size: 16px;
+  margin-bottom: 15px;
 }
 
 .assignment-overlay h2 {
-  font-size: 18px;
+  font-size: 22px;
   margin-bottom: 10px;
+  color: #022c1f;
 }
 
 .assignment-box:hover .assignment-overlay {
@@ -98,7 +107,7 @@
   border: none;
   border-radius: 30px;
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
@@ -113,17 +122,67 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .assignment-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    margin: 50px 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 280px));
+    gap: 25px;
+    margin: 40px auto;
   }
 
   .assignment-box {
-    width: 245px;
-    height: 204px;
+    height: 250px;
+  }
+
+  .assignment-overlay h2 {
+    font-size: 20px;
+  }
+
+  .assignment-overlay p {
+    font-size: 14px;
+  }
+
+  .assignment-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 425px) {
+  .assignment-container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 260px));
+    gap: 20px;
+    margin: 30px auto;
+  }
+
+  .assignment-box {
+    height: 220px;
+  }
+
+  .assignment-overlay h2 {
+    font-size: 18px;
+  }
+
+  .assignment-overlay p {
+    font-size: 13px;
+  }
+
+  .assignment-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .assignment-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 25px auto;
+  }
+
+  .assignment-box {
+    height: 200px;
+    max-width: 240px;
+    margin: 0 auto;
   }
 
   .assignment-overlay h2 {
@@ -134,76 +193,8 @@
     font-size: 12px;
   }
 
-  .assignment-link {
-    width: 35px;
-    height: 35px;
-  }
-
-  .assignment-link img {
-    width: 20px;
-    height: 20px;
-  }
-
   .assignment-btn {
     padding: 6px 12px;
     font-size: 12px;
-  }
-}
-
-@media (max-width: 320px) {
-  .assignment-box {
-    width: 223px;
-    height: 200px;
-  }
-
-  .assignment-overlay h2 {
-    font-size: 14px;
-  }
-
-  .assignment-overlay p {
-    font-size: 11px;
-  }
-
-  .assignment-box:hover .assignment-overlay {
-    bottom: 0px;
-  }
-
-  .assignment-link {
-    width: 30px;
-    height: 30px;
-  }
-
-  .assignment-link img {
-    width: 18px;
-    height: 18px;
-  }
-
-  .assignment-btn {
-    padding: 5px 10px;
-    font-size: 11px;
-  }
-}
-
-@media (max-width: 768px) {
-  .assignment-container {
-    flex-wrap: wrap;
-    margin: 50px;
-    justify-content: center;
-  }
-
-  .assignment-box {
-    width: 265px;
-    height: 220px;
-  }
-
-  .assignment-btn {
-    padding: 8px 16px;
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 375px) {
-  .assignment-container {
-    margin: 30px 0;
   }
 }

@@ -11,6 +11,7 @@ nav {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   padding: 0 10px;
+  height: 80px;
 }
 
 .logo {
@@ -29,9 +30,43 @@ nav {
   right: 30px;
 }
 
+/* Navigation link styling with underline animation */
+.navigation li {
+  position: relative;
+}
+
 .navigation a {
   text-decoration: none;
   color: white;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.navigation a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #38ffb9;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navigation a:hover {
+  color: #38ffb9;
+}
+
+.navigation a:hover::after {
+  width: 100%;
+}
+
+/* Active link styling */
+.navigation a.active::after {
+  width: 100%;
+  background-color: #38ffb9;
 }
 
 .hero {
@@ -131,6 +166,11 @@ nav {
   .navigation {
     font-size: 12px;
   }
+
+  .navigation a::after {
+    height: 1.5px;
+  }
+
   .logo {
     font-size: 12px;
   }
@@ -164,6 +204,11 @@ nav {
   .navigation {
     font-size: 16px;
   }
+
+  .navigation a::after {
+    height: 2px;
+  }
+
   .logo {
     font-size: 17px;
   }

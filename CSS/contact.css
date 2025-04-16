@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+.contact {
+  padding-top: 10px;
+}
+
 .contact-info {
   width: 45%;
 }
