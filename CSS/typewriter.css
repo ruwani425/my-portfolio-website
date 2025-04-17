@@ -1,0 +1,121 @@
+.typing-line {
+  display: flex;
+  align-items: flex-end;
+  white-space: nowrap;
+  position: relative;
+}
+
+.typewriter-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: bottom;
+  transform: translateY(10px);
+}
+
+.typewriter-container {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+#typewriter-container {
+  position: relative;
+}
+
+#typewriter {
+  color: #38ffb9;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: inherit;
+  vertical-align: top;
+  margin-left: 10px;
+  margin-top: -8px;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background-color: #38ffb9;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+  vertical-align: middle;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.hero-content h1 .typing-line {
+  font-size: 1em;
+}
+
+.typing-line > span:first-child {
+  vertical-align: bottom;
+}
+
+.im-a {
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .typewriter-container {
+    font-size: 3rem;
+    margin-top: -15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .typewriter-container {
+    font-size: 2rem;
+    margin-top: -10px;
+  }
+
+  #typewriter {
+    margin-left: -3px;
+  }
+}
+
+@media (max-width: 425px) {
+  .typewriter-container {
+    font-size: 2rem;
+    margin-top: -5px;
+    text-align: center;
+  }
+  .typewriter-wrapper {
+    transform: translateY(8px);
+  }
+  #typewriter {
+    margin-left: -3px;
+  }
+}
+
+@media (max-width: 320px) {
+  .typewriter-container {
+    font-size: 1.3rem;
+  }
+  .typewriter-wrapper {
+    transform: translateY(5px);
+  }
+
+  #typewriter {
+    margin-top: -4px;
+    margin-left: -3px;
+  }
+}
+
+@media (max-width: 375px) {
+  #typewriter {
+    margin-top: -6px;
+    margin-left: -4px;
+  }
+}

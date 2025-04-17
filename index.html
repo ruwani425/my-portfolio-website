@@ -8,6 +8,7 @@
     />
     <title>Ruwani Ranthika-portfolio</title>
     <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/typewriter.css" />
     <link rel="stylesheet" href="/CSS/home.css" />
     <link rel="stylesheet" href="/CSS/about.css" />
     <link rel="stylesheet" href="/CSS/education.css" />
@@ -49,11 +50,23 @@
     <!-- hero section -->
     <section id="hero" class="hero">
       <div class="hero-content">
-        <h1>Hello, It's Me <br /><span>Ruwani Ranthika</span></h1>
+        <h1>
+          Hello, It's Me <br />
+          <span>Ruwani Ranthika</span><br />
+          <div class="typing-line">
+            <span>I'm a</span>
+            <span class="typewriter-wrapper">
+              <span id="typewriter-container">
+                <span id="typewriter"></span>
+                <span class="cursor"></span>
+              </span>
+            </span>
+          </div>
+        </h1>
         <p>
-          “Hi, i’m a passinoate Software Engineering student diving into the
+          "Hi, i'm a passinoate Software Engineering student diving into the
           world of Full Stack Development , crafting solutions that bring ideas
-          to life.”
+          to life."
         </p>
         <div class="social-links">
           <div>
@@ -166,58 +179,60 @@
     </section>
 
     <!-- service section -->
-   <!-- This is just the service section HTML with the added box-content div -->
-<section id="service" class="service">
-  <div class="topic">
-    <span class="text1">What</span><span class="text2">I Do</span>
-  </div>
-  <div>
-    <img id="underline-img" src="/images/underline.png" alt="underline" />
-  </div>
-
-  <div class="box-container">
-    <div class="box">
-      <div class="box-content">
-        <img
-          class="web-icon"
-          src="/images/enterprises-appli.png"
-          alt="enterprises-application"
-        />
-        <h3>Enterprise Application</h3>
-        <p>
-          Create modern enterprise software,ensure reliable software
-          integration.
-        </p>
-        <button class="btn-read-more">Read more</button>
+    <section id="service" class="service">
+      <div class="topic">
+        <span class="text1">What</span><span class="text2">I Do</span>
       </div>
-    </div>
-
-    <div class="box">
-      <div class="box-content">
-        <img class="web-icon" src="/images/ui-ux.png" alt="ui-ux-png" />
-        <h3>UI/UX Designing</h3>
-        <p>
-          I design UI/UX using Figma for desktop apps,mobile apps and web
-          apps.
-        </p>
-        <button class="btn-read-more">Read more</button>
+      <div>
+        <img id="underline-img" src="/images/underline.png" alt="underline" />
       </div>
-    </div>
 
-    <div class="box">
-      <div class="box-content">
-        <img class="web-icon" src="/images/web-develop.png" alt="web-icon" />
-        <h3>Web Development</h3>
-        <p>
-          Let the whole world know about your brand with unique and
-          performance driven website
-        </p>
-        <button class="btn-read-more">Read more</button>
+      <div class="box-container">
+        <div class="box">
+          <div class="box-content">
+            <img
+              class="web-icon"
+              src="/images/enterprises-appli.png"
+              alt="enterprises-application"
+            />
+            <h3>Enterprise Application</h3>
+            <p>
+              Create modern enterprise software,ensure reliable software
+              integration.
+            </p>
+            <button class="btn-read-more">Read more</button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <img class="web-icon" src="/images/ui-ux.png" alt="ui-ux-png" />
+            <h3>UI/UX Designing</h3>
+            <p>
+              I design UI/UX using Figma for desktop apps,mobile apps and web
+              apps.
+            </p>
+            <button class="btn-read-more">Read more</button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <img
+              class="web-icon"
+              src="/images/web-develop.png"
+              alt="web-icon"
+            />
+            <h3>Web Development</h3>
+            <p>
+              Let the whole world know about your brand with unique and
+              performance driven website
+            </p>
+            <button class="btn-read-more">Read more</button>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- project section -->
     <section id="projects" class="projects">
@@ -652,6 +667,7 @@
       <p>&copy; 2023 Ruwani Ranthika. All rights reserved.</p>
     </footer>
     <script src="/js/active-nav.js"></script>
+    <script src="/js/typewriter.js"></script>
     <script src="/js/skills.js"></script>
   </body>
 </html>
